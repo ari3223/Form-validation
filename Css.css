@@ -1,0 +1,103 @@
+
+body{
+  background-color: lightgrey ;
+}
+.con{
+  max-width: 450px;
+  height: 89vh;
+  margin: 25px auto;
+  padding: 0;
+  background-color: #fff;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 30px 10px  rgba(0, 0, 0, .4) ;
+}
+.con h1{
+  padding-top: 5px;
+}
+.bigerror{
+  margin: 3px auto;
+  height: 60px;
+  width: 95%;
+  border: red solid 1px;
+  border-radius: 5px;
+}
+.form{
+  text-align: left;
+  margin: auto 0;
+}
+.fieldp{
+  padding-left: 18px;
+  margin: 9px auto;
+  align-items: center;
+  height: 65px;
+}
+.fieldp input{
+  background-color: rgb(248, 246, 242);
+  margin-top: 2.5px;
+  text-align: left;
+  width: 95%;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+  border-bottom: red solid 2px;
+  border-radius: 8px;
+}
+.fieldp input:valid{
+  border: yellowgreen solid 2px;
+  background-color:rgb(224, 223, 219) ;
+}
+
+.btn{
+  height: 55px;
+  width: 150px;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(59, 59, 59);
+  color: #fff;
+  font-size: 28px;
+  padding-bottom: 6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn:hover{
+  filter: brightness(120%);
+  background-color: rgb(65, 65, 65);
+  cursor: pointer;
+}
+.btn:active{
+  outline: 0;
+  transform: scale(.98);
+}
+
+
+.error{
+    width: 95%;
+    margin: auto;
+    border-radius: 6px;
+    border: red solid 2px;
+    color: red;
+    padding: 15px 0;
+    background-color: aliceblue;
+    
+}
+
+.done{
+    width: 95%;
+    margin: auto;
+    border-radius: 6px;
+    border: green solid 2px;
+    color: green;
+    padding: 15px 0;
+}
+
+.iimg{
+    width: 20%;
+}
+
+.iimg .con{
+    height: 110vh;
+}

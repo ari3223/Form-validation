@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>validate fields</title>
+    <link rel="stylesheet" href="Css.css">
+    
+</head>
+<body>
+    <div class="con">
+        <h1>sign up today!</h1>
+        <div id="massage"></div>
+        <form class="form">
+
+    <div class="fieldp">
+        <label for="name">full name</label><br>
+        <input type="text"  id="name" name="name" required minlength="3" maxlength="100"
+        placeholder="Full name">
+    </div>
+
+    <div class="fieldp">
+        <label for="tel">phone number</label><br>
+        <input type="tel"  id="tel" name="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="333-333-4444" title="please observe the order of numbers"> 
+    </div>
+
+    <div class="fieldp">
+        <label for="email">email</label><br>
+        <input type="email"  id="email" name="email" required 
+        placeholder="example@gmail.com" title="*Email* should be intered">
+    </div>
+    <div class="fieldp">
+        <label for="site">website url</label><br>
+        <input type="url"  id="site" name="site" required pattern="https?://.+"
+        placeholder="https://this is an example" title="began with https://">
+    </div>
+    <div class="fieldp">
+        <label for="pas">password</label><br>
+        <input type="password"  id="pas" name="pas" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required minlength="8"
+        placeholder="passworad should be 8 character at least">
+    </div>
+    <div class="fieldp">
+        <label for="cpas">confirm password</label><br>
+        <input type="password"  id="c_ps" name="cpas" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required minlength="8"
+        placeholder="confirm password (at least 8 character)">
+    </div>
+</form>
+
+
+    <button class="btn">submit</button>
+
+
+</div>
+    
+
+
+
+
+<script src="clases/UI.js"></script>
+<script src="Js.js"></script>
+
+</body>
+</html>
