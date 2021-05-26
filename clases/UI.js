@@ -1,6 +1,7 @@
 class UI{
-    //this show an error with choosen theme and choosen text
+    //(1)this show an error with choosen theme and choosen text
     massage(message,typ){
+        document.querySelector('.btn').style.display = 'none';
         let masPlace = document.querySelector('#massage');
          //Green theme
         if(typ === 'done'){
@@ -15,20 +16,20 @@ class UI{
          //remove message for new message
         setTimeout(function() {
             masPlace.textContent = '';
-            masPlace.classList.remove(typ)
-        }, 2500);
+            masPlace.classList.remove(typ);
+            document.querySelector('.btn').style.display = 'block';
+        }, 1700);
     }
-     //show gifs and photos to show the User that everyting is done
+     //(2)show gifs and photos to show the User that everyting is done
     gifdone(){
         let place   = document.querySelector('#massage'),
-            loadgif = document.createElement('img'),
+            loadgif = document.createElement('img');
             BTN = document.querySelector('.btn');
          //add an gif to show
         loadgif.setAttribute('src','img/a.gif');
         loadgif.classList.add('iimg');
-        
-        BTN.style.display = 'none';
-        
+
+        BTN.style.display = 'none';        
         
         place.appendChild(loadgif);
         setTimeout(function() {
@@ -37,7 +38,7 @@ class UI{
                 BTN.style.display = 'block';   
             }, 3400);
     }
-    
+     //(3)valid inputs too be macth
     validpass(field){
         
         if(field[5].value === field[4].value){
