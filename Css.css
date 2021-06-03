@@ -106,9 +106,7 @@ body{
 }
 
 @media screen and (max-width: 600px){
-    .con{
-        height: 10%;
-    }
+    
     .fieldp input{
         height: 25px;
         width: 92%;
@@ -137,5 +135,10 @@ body{
     }
     .iimg{
     width: 13%;
+}
+}
+@media screen and (max-height: 350px){
+      .con{
+          height: 160vh;
 }
 }
