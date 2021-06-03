@@ -129,7 +129,8 @@ body{
         height: 40px;
         width: 100px;
         font-size: 25px;
-        margin-top: 6px
+        margin-top: 6px;
+        margin-bottom: 20px
     }
     .fieldp{
         margin: 0 auto;
