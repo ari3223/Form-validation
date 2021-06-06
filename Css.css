@@ -4,7 +4,6 @@ body{
 }
 .con{
   max-width: 450px;
-  height: 83vh;
   margin: 25px auto;
   padding: 0;
   background-color: #fff;
@@ -15,6 +14,9 @@ body{
 }
 .con h1{
   padding-top: 5px;
+}
+#massage{
+  min-height: 20px;
 }
 .bigerror{
   margin: 3px auto;
@@ -56,8 +58,7 @@ body{
 .btn{
   height: 55px;
   width: 150px;
-  margin: auto;
-  margin-top: 15px;
+  margin: 15px auto;
   border-radius: 10px;
   border: 0;
   background-color: rgb(59, 59, 59);
@@ -84,6 +85,7 @@ body{
     border: red solid 2px;
     color: red;
     padding: 15px 0;
+    
     background-color: aliceblue;
     
 }
@@ -107,7 +109,7 @@ body{
 
 @media screen and (max-width: 600px){
     .con{
-        height: 75vh
+        height: unset
     }
     .fieldp input{
         height: 25px;
@@ -119,6 +121,10 @@ body{
         font-size: 28px;
         margin-bottom: 5px
     }
+    .error{
+      width: 87%;
+      padding: 8px 0;
+    }
     .fieldp label{
         font-size: 16px;
         position: relative;
@@ -129,8 +135,10 @@ body{
         height: 40px;
         width: 100px;
         font-size: 25px;
-        margin-top: 6px
+        margin-top: 6px;
+        margin-bottom: 10px;
     }
+    
     .fieldp{
         margin: 0 auto;
     }
@@ -138,3 +146,4 @@ body{
     width: 13%;
 }
 }
+

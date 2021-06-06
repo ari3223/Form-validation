@@ -1,6 +1,8 @@
 //classes
 let ui = new UI();
 
+//variabless
+let BTN = document.querySelector('.btn');
 //evenliseners
 evenlisener();
 function evenlisener() {
